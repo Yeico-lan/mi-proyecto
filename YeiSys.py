@@ -17,7 +17,7 @@ def conectar_db():
         return None
 
 
-# Crear conexión global inicial
+# Crear conexión global inicial.
 conn = conectar_db()
 if conn:
     cursor = conn.cursor()

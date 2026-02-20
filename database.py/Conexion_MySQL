@@ -1,17 +1,17 @@
-import mysql.connector
+import mysql.connector # Importa la libreria necesaria para conectar Pyhton con My SQL
 
-def get_connection():
+def get_connection(): # Define una funcion llamada "get_connection"
     """
     Esta funcion crea y devuelve una conexion nueva a la base de datos.
     Cada vez que la llamamos, abre una conexion limpia.
     """
-    
+    # Aqui se crea el objeto de conexion usando los parametros de mi servidor
     connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="db_movimientos"
+        host="localhost",       # La direccion del servidor 
+        user="root",            # El nombre de usuario
+        password="",            # La contraseña del usuario (en este caso vacia)
+        database="db_movimientos" # El nombre de la base de datos especifica  
 
     )
 
-    return connection
+    return connection       # Devuelve la conexion establecida para que puedas usarla en otra parte.

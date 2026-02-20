@@ -1,0 +1,17 @@
+import mysql.connector
+
+def get_connection():
+    """
+    Esta funcion crea y devuelve una conexion nueva a la base de datos.
+    Cada vez que la llamamos, abre una conexion limpia.
+    """
+    
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="db_movimientos"
+
+    )
+
+    return connection

@@ -92,7 +92,7 @@ def cerrar_programa():
 # ---------------- INTERFAZ ----------------
 
 root = tk.Tk()
-root.title("YeiSys FMS - Yeico Financial Management System")
+root.title("YeiSys FMS - Yeico Financial Management SystemS")
 root.geometry("900x700")
 root.config(bg="#0A0A5F")
 
